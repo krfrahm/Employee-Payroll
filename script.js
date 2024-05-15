@@ -7,7 +7,7 @@ let addEmployees = true
 const collectEmployees = function() {
   // TODO: Get user input to create and return an array of employee objects
 
-  while (addEmployees){
+ while (addEmployees){
   addEmployeesBtn.addEventListener('click', function(){
   const first = prompt ("Employee First Name")
   const last = prompt ("Employee Last Name")
@@ -27,8 +27,9 @@ const collectEmployees = function() {
   //if (addEmployees = false)
     //return (displayEmployees)
 })}
-
 }
+
+
 
 // Display the average salary
 const displayAverageSalary = function(employeesArray) {
