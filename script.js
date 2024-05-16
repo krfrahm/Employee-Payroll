@@ -7,26 +7,29 @@ let addEmployees = true
 const collectEmployees = function() {
   // TODO: Get user input to create and return an array of employee objects
 
- while (addEmployees){
   addEmployeesBtn.addEventListener('click', function(){
+  while(addEmployees) {
   const first = prompt ("Employee First Name")
   const last = prompt ("Employee Last Name")
   const income = prompt ("Employee Salary")
   if (isNaN(income)) {
+    window.alert("Needs to be a number")
     return 'not a number'
   }
-
+  
   employeesArray.push({
     firstName:first,
     lastName:last,
     salary:income
   })
   console.log(employeesArray)
-
+ console.log(employeesArray.length)
   addEmployees = window.confirm("Add more employees?")
-  //if (addEmployees = false)
-    //return (displayEmployees)
-})}
+  if (addEmployees !== true) {
+    displayEmployees();
+   } 
+}})
+
 }
 
 
@@ -40,6 +43,8 @@ const displayAverageSalary = function(employeesArray) {
 // Select a random employee
 const getRandomEmployee = function(employeesArray) {
   // TODO: Select and display a random employee
+ 
+  Math.floor[Math.random()* employeesArray.length]
 
 }
 
