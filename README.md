@@ -6,8 +6,8 @@ This form collects the first and last names as well as salary for employees. As 
 
 ## Usage
 
-For repository: https://github.com/krfrahm/challenge1.git
-For website: http://krfrahm.github.io/challenge1
+For repository: https://github.com/krfrahm/employee-payroll.git
+For website: http://krfrahm.github.io/employee-payroll
 
 
 ![Website screenshot 1](assets/Employee%20Tracker.PNG)

@@ -1,12 +1,12 @@
 // Get a reference to the #add-employees-btn element
 const addEmployeesBtn = document.querySelector('#add-employees-btn');
-const employeesArray = []
-let addEmployees = true
+const employeesArray = [];
+let addEmployees = true;
 
 // Collect employee data
 const collectEmployees = function() {
   // TODO: Get user input to create and return an array of employee objects
-
+  
   addEmployeesBtn.addEventListener('click', function(){
   while(addEmployees) {
   const first = prompt ("Employee First Name")
@@ -25,12 +25,14 @@ const collectEmployees = function() {
   console.log(employeesArray)
  console.log(employeesArray.length)
   addEmployees = window.confirm("Add more employees?")
-  if (addEmployees !== true) {
-    displayEmployees();
+  if (addEmployees === false) {
+    displayEmployees()
    } 
 }})
 
 }
+
+
 
 
 
